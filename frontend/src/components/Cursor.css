@@ -1,0 +1,14 @@
+.cursor {
+	background-image: url('../assets/cursor.png');
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+
+	.name {
+		font-size: 12px;
+		position: absolute;
+		top: 12px;
+		left: 16px;
+	}
+}
