@@ -26,7 +26,6 @@ class UserManager {
     handleMove(data) {
         this.xCoord = data.x;
         this.yCoord = data.y;
-        console.log("reached here");
     }
     getSocketId() {
         return this.socket.id;

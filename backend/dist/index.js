@@ -8,7 +8,7 @@ const app = express();
 const server = createServer(app);
 const io = new socket_io_1.Server(server, {
     cors: {
-        origin: "http://localhost:3000"
+        origin: "*",
     }
 });
 const roomManager = new RoomManager_1.RoomManager();

@@ -9,12 +9,10 @@ class RoomManager {
     addUser(name, socket) {
         const user = new UserManager_1.UserManager(name, socket, 0, 0);
         this.users.set(user.getSocketId(), user);
-        console.log("user added : ", this.users);
         this.initHandlers(socket);
     }
     removeUser(socket) {
         this.users.delete(socket.id);
-        console.log("user removed : ", this.users);
     }
     broadcast(socket) {
         const payload = [];
